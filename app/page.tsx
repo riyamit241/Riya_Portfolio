@@ -45,7 +45,7 @@ const interests = [
   "Greek mythology",
   "Crochet",
   "AI Ethics",
-  "Psychology",
+  "Philosophy",
   "Reading",
   "Interior design (someday)",
 ]
@@ -81,10 +81,10 @@ const projects = [
   },
   {
     icon: Activity,
-    name: "Anomaly Detection for Satellite Telemetry",
-    problem: "Irregular patterns in real-time satellite data.",
-    solution: "Developed ARIMA time-series model for predictive anomaly detection.",
-    tags: ["ARIMA", "Time-Series", "Python"],
+    name: "Optimized FastDVDnet Pipeline",
+    problem: "Restoring low-light video traditionally requires heavy temporal calculations that ruin real-time latency.",
+    solution: "Architecturally optimized the FastDVDnet model, trimming redundant layers to achieve sub-100ms inference without sacrificing quality.",
+    tags: ["FastDVDnet", "Computer Vision", "Python"],
   },
   {
     icon: MessageSquare,
