@@ -12,7 +12,8 @@ import {
   Scale, 
   Landmark, 
   Scissors,
-  ArrowRight
+  ArrowRight,
+  Cloud
 } from "lucide-react"
 
 const fadeInUp = {
@@ -55,7 +56,7 @@ const workExperience = [
     company: "Tredence Analytics",
     date: "Jan 2026–Present",
     role: "AI/ML Intern",
-    description: "Optimizing neural architectures and hybrid pipelines to isolate complex supply chain anomalies, significantly outperforming standard ML baselines.",
+    description: "Optimizing neural architectures and hybrid anomaly detection pipelines to analize complex supply chain patterns, significantly outperforming standard ML baselines.",
   },
   {
     company: "ISTRAC ISRO",
@@ -73,11 +74,18 @@ const workExperience = [
 
 const projects = [
   {
+    icon: Cloud,
+    name: "Serverless Daily Briefing Agent",
+    problem: "Mornings mean checking weather, calendar, and news across five different apps — fragmented and slow.",
+    solution: "Built a semantic summarization pipeline using LangChain for intelligent retrieval.",
+    tags: ["LangChain", "NLP", "Python"],
+  },
+    {
     icon: FileText,
     name: "Legislative Document Summarization",
     problem: "Legal documents are dense and inaccessible to most readers.",
-    solution: "Built a semantic summarization pipeline using LangChain for intelligent retrieval.",
-    tags: ["LangChain", "NLP", "Python"],
+    solution: "Engineered an event-driven microservice on AWS Lambda that ingests real-time weather data, synthesizes it with a DynamoDB user context layer, and delivers a personalized briefing via Telegram webhook.",
+    tags: ["AWS Lambda", "DynamoDB", "Python", "REST APIs", "Serverless"],
   },
   {
     icon: Activity,
@@ -219,7 +227,7 @@ function About() {
               I believe technology should do more than compute — it should consider. As an AI/ML engineer, 
               my work sits at the intersection of rigorous architecture and intentional design. Whether 
               I&apos;m building anomaly detection pipelines for satellite telemetry or context-aware retrieval 
-              systems that untangle messy enterprise data, I focus on the questions we ask just as much 
+              systems that untangle messy enterprise data or serverless agents that turn scattered data into something useful every morning, I focus on the questions we ask just as much 
               as the answers we find.
             </p>
             <p className="text-[#2C2C2C]/80 leading-relaxed mb-8">
